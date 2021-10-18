@@ -3,7 +3,7 @@ metadata:
   name: webhook-configuration
 spec:
   webhooks:
-    - type: "sh.keptn.event.othertask.triggered"
+    - type: "sh.keptn.event.triggered"
       subscriptionID: my-subscription-id
       sendFinished: false
       envFrom: 
