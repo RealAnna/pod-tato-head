@@ -1,0 +1,15 @@
+kind: WebhookConfig
+metadata:
+  name: webhook-configuration
+spec:
+  webhooks:
+    - type: "sh.keptn.event.othertask.triggered"
+      subscriptionID: my-subscription-id
+      sendFinished: false
+      envFrom: 
+        - name: "secretKey"
+          secretRef:
+            name: "my-webhook-k8s-secret"
+            key: "my-key"
+      requests:
+        - "curl https://keptn.sh/asdsadsa"
